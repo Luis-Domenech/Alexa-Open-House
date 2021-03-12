@@ -1,0 +1,11 @@
+#Initial setup of db migrations folder
+flask db init
+
+#Generates sql code for new changes in DB
+flask db migrate -m "Short description of migration"
+
+#To append changes to DB
+flask db upgrade
+
+#To remove changes from DB
+flask db downgrade 
